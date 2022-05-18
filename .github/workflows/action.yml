@@ -1,0 +1,19 @@
+name: Sample actions
+
+# トリガーの設定
+on:
+  pull_request:
+    branches:
+      - main
+    types: [closed]
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        run: echo Hello, world!
