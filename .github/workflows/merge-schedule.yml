@@ -12,9 +12,9 @@ jobs:
   merge_schedule:
     runs-on: ubuntu-latest
     steps:
-      - uses: gr2m/merge-schedule-action@v1.3.5
+      - uses: gr2m/merge-schedule-action@v1
         with:
-          merge_method: merge
+          merge_method: squash
           time_zone: "Asia/Tokyo"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
