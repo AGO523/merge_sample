@@ -1,8 +1,7 @@
 #!/bin/sh
 
-# echo "パーソナルアクセストークンを入力してください"
-# read PERSONAL_ACCESS_TOKEN
-PERSONAL_ACCESS_TOKEN = "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"
+echo "パーソナルアクセストークンを入力してください"
+read PERSONAL_ACCESS_TOKEN
 
 echo "マージするプルリクエストのナンバーを入力してください"
 read PULL_NUMBER
