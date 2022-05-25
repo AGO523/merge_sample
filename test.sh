@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# echo "パーソナルアクセストークンを入力してください"
-# read PERSONAL_ACCESS_TOKEN
+echo "パーソナルアクセストークンを入力してください"
+read PERSONAL_ACCESS_TOKEN
 
 echo "マージするプルリクエストのナンバーを入力してください"
 read PULL_NUMBER
@@ -12,6 +12,6 @@ read RELESE_DATETIME
 command= echo "curl \
 -X PUT \
 -H "Accept: application/vnd.github.v3+json" \
--H "Authorization: token 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" \
-https://api.github.com/repos/AGO523/merge_sample/pulls/${PULL_NUMBER}/merge" | at -t "${RELESE_DATETIME}"
+-H "Authorization: token ${PERSONAL_ACCESS_TOKEN}" \
+https://api.github.com/repos/AGO523/merge_sample/pulls/${PULL_NUMBER}/merge" | at -t "$RELESE_DATETIME"
 eval $command
