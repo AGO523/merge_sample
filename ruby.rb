@@ -1,2 +1,2 @@
-num = 2
+num = 24
 puts num
