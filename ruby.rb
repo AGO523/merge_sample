@@ -1,2 +1,2 @@
-num = 1
+num = 2
 puts num
