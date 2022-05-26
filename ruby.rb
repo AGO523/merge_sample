@@ -1,2 +1,2 @@
-num = 25
+num = 26
 puts num
