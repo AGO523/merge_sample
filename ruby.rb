@@ -1,2 +1,2 @@
-num = 33
+num = 34
 puts num
